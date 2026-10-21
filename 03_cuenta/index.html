@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>División de la cuenta</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="estilos.css">
+  <!-- defer ejecuta el archivo cuando el HTML ya se ha analizado. -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <a href="../index.html">Volver a los ejercicios</a>
+    <p class="actividad">EJERCICIO 03</p>
+    <h1>División de la cuenta</h1>
+    <p class="descripcion">Calcula la propina y divide la cuenta en partes iguales.</p>
+    <form id="formulario" novalidate>
+      <label for="total">Total de la cuenta (USD)</label>
+      <input id="total" name="total" type="number" min="0" step="0.01" required>
+      <label for="porcentaje">Propina (%)</label>
+      <input id="porcentaje" name="porcentaje" type="number" min="0" step="any" required>
+      <label for="personas">Número de personas</label>
+      <input id="personas" name="personas" type="number" min="1" step="1" required>
+      <div class="acciones">
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+    <p id="error" class="error" role="alert"></p>
+    <section class="resultado" aria-labelledby="titulo-resultado" aria-live="polite">
+      <h2 id="titulo-resultado">Resultado</h2>
+      <div id="resultado">
+        <p>Propina: <strong id="salida-propina">—</strong></p>
+        <p>Total con propina: <strong id="salida-total">—</strong></p>
+        <p>Pago por persona: <strong id="salida-persona">—</strong></p>
+      </div>
+    </section>
+    <p class="nota">Los importes se muestran en USD con dos decimales. El pago por persona es el reparto matemático redondeado; al cobrar, podría requerirse un ajuste de centavos.</p>
+  </main>
+</body>
+</html>

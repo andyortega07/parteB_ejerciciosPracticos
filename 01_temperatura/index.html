@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de temperatura</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="estilos.css">
+  <!-- defer ejecuta el archivo cuando el HTML ya se ha analizado. -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <a href="../index.html">Volver a los ejercicios</a>
+    <p class="actividad">EJERCICIO 01</p>
+    <h1>Conversor de temperatura</h1>
+    <p class="descripcion">Ingresa una temperatura en Celsius para convertirla a Fahrenheit y Kelvin.</p>
+    <form id="formulario" novalidate>
+      <label for="celsius">Temperatura en Celsius (°C)</label>
+      <input id="celsius" name="celsius" type="number" step="any" min="-273.15" required>
+      <div class="acciones">
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+    <p id="error" class="error" role="alert"></p>
+    <section class="resultado" aria-labelledby="titulo-resultado" aria-live="polite">
+      <h2 id="titulo-resultado">Resultado</h2>
+      <div id="resultado">
+        <p>Celsius: <strong id="salida-celsius">—</strong></p>
+        <p>Fahrenheit: <strong id="salida-fahrenheit">—</strong></p>
+        <p>Kelvin: <strong id="salida-kelvin">—</strong></p>
+      </div>
+    </section>
+    <p class="nota">F = C × 9/5 + 32 · K = C + 273.15. La temperatura mínima admitida es −273.15 °C.</p>
+  </main>
+</body>
+</html>

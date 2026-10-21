@@ -1,0 +1,309 @@
+{
+  "metodo": "Ejecución de los app.js originales con Node.js y un entorno DOM mínimo. No es una prueba en navegador ni una captura de pantalla.",
+  "total": 30,
+  "resultados": [
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": 25
+      },
+      "resultado": {
+        "salida-celsius": "25.00 °C",
+        "salida-fahrenheit": "77.00 °F",
+        "salida-kelvin": "298.15 K"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": 0
+      },
+      "resultado": {
+        "salida-fahrenheit": "32.00 °F",
+        "salida-kelvin": "273.15 K"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": -40
+      },
+      "resultado": {
+        "salida-fahrenheit": "-40.00 °F",
+        "salida-kelvin": "233.15 K"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": -273.15
+      },
+      "resultado": {
+        "salida-kelvin": "0.00 K"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": ""
+      },
+      "resultado": "Ingresa la temperatura en Celsius.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": -274
+      },
+      "resultado": "La temperatura debe ser un número igual o mayor que -273.15 °C.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": "abc"
+      },
+      "resultado": "La temperatura debe ser un número igual o mayor que -273.15 °C.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": "1e309"
+      },
+      "resultado": "La temperatura debe ser un número igual o mayor que -273.15 °C.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "entrada": {
+        "celsius": "1e308"
+      },
+      "resultado": "El valor es demasiado grande para realizar la conversión.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "01_temperatura",
+      "prueba": "Restablecer salidas y mensaje mediante el evento reset",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 8,
+        "nota2": 9,
+        "nota3": 10
+      },
+      "resultado": {
+        "salida-promedio": "9.00 / 10"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 7.5,
+        "nota2": 8.2,
+        "nota3": 9
+      },
+      "resultado": {
+        "salida-promedio": "8.23 / 10"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 0,
+        "nota2": 0,
+        "nota3": 0
+      },
+      "resultado": {
+        "salida-promedio": "0.00 / 10"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 10,
+        "nota2": 10,
+        "nota3": 10
+      },
+      "resultado": {
+        "salida-promedio": "10.00 / 10"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 8,
+        "nota2": "",
+        "nota3": 10
+      },
+      "resultado": "Completa las tres notas.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": 11,
+        "nota2": 9,
+        "nota3": 10
+      },
+      "resultado": "Cada nota debe ser un número entre 0 y 10.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": -1,
+        "nota2": 9,
+        "nota3": 10
+      },
+      "resultado": "Cada nota debe ser un número entre 0 y 10.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "entrada": {
+        "nota1": "abc",
+        "nota2": 9,
+        "nota3": 10
+      },
+      "resultado": "Cada nota debe ser un número entre 0 y 10.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "02_promedio",
+      "prueba": "Restablecer salidas y mensaje mediante el evento reset",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 100,
+        "porcentaje": 10,
+        "personas": 4
+      },
+      "resultado": {
+        "salida-propina": "$10.00",
+        "salida-total": "$110.00",
+        "salida-persona": "$27.50"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 80,
+        "porcentaje": 0,
+        "personas": 2
+      },
+      "resultado": {
+        "salida-propina": "$0.00",
+        "salida-total": "$80.00",
+        "salida-persona": "$40.00"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 10,
+        "porcentaje": 0,
+        "personas": 3
+      },
+      "resultado": {
+        "salida-propina": "$0.00",
+        "salida-total": "$10.00",
+        "salida-persona": "$3.33"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 0,
+        "porcentaje": 10,
+        "personas": 1
+      },
+      "resultado": {
+        "salida-propina": "$0.00",
+        "salida-total": "$0.00",
+        "salida-persona": "$0.00"
+      },
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 100,
+        "porcentaje": 10,
+        "personas": 0
+      },
+      "resultado": "El número de personas debe ser un entero mayor o igual que 1.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 100,
+        "porcentaje": 10,
+        "personas": 2.5
+      },
+      "resultado": "El número de personas debe ser un entero mayor o igual que 1.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": -1,
+        "porcentaje": 10,
+        "personas": 2
+      },
+      "resultado": "El total y el porcentaje deben ser números iguales o mayores que cero.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 100,
+        "porcentaje": -10,
+        "personas": 2
+      },
+      "resultado": "El total y el porcentaje deben ser números iguales o mayores que cero.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": 100,
+        "porcentaje": "",
+        "personas": 2
+      },
+      "resultado": "Completa el total, la propina y el número de personas.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "entrada": {
+        "total": "1e308",
+        "porcentaje": 100,
+        "personas": 2
+      },
+      "resultado": "Los valores son demasiado grandes para realizar el cálculo.",
+      "estado": "Correcto"
+    },
+    {
+      "ejercicio": "03_cuenta",
+      "prueba": "Restablecer salidas y mensaje mediante el evento reset",
+      "estado": "Correcto"
+    }
+  ]
+}
